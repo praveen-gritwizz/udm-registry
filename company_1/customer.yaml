@@ -7,19 +7,19 @@ metadata:
 
 schema:
   id:
-    type: integer
+    type: int
     required: true
   first_name:
-    type: string
+    type: str
     required: true
   last_name:
-    type: string
+    type: str
     required: true
   phone:
-    type: string
+    type: str
     required: true
   joined_date:
-    type: string
+    type: str
     required: true
 
 transformations:
