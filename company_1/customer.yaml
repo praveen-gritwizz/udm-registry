@@ -7,7 +7,7 @@ metadata:
 
 schema:
   id:
-    type: int
+    type: str
     required: true
   first_name:
     type: str
