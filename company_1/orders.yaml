@@ -1,0 +1,20 @@
+# orders.yaml
+order:
+  order_id:
+    type: integer
+    required: true
+    description: Unique order ID
+  customer_id:
+    type: integer
+    required: true
+    description: ID of the customer placing the order
+  total_amount:
+    type: number
+    format: float
+    required: true
+    description: Total order amount
+  created_at:
+    type: string
+    format: date-time
+    required: true
+    description: Timestamp when the order was created

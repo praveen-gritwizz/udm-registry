@@ -1,0 +1,35 @@
+# udm_definitions/company_1/customer.yaml
+metadata:
+  customer_name: company_1
+  udm_name: customer
+  description: "Customer UDM for company_1 defining basic profile and join info."
+  version: "1.0.0"
+
+schema:
+  id:
+    type: integer
+    required: true
+  first_name:
+    type: string
+    required: true
+  last_name:
+    type: string
+    required: true
+  phone:
+    type: string
+    required: true
+  joined_date:
+    type: string
+    required: true
+
+transformations:
+  full_name:
+    type: concat
+    sources:
+      - first_name
+      - last_name
+    separator: " "
+  joined_date:
+    type: date_format
+    from_format: "%d/%m/%Y"
+    to_format: "%Y-%m-%d"
